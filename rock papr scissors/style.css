@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	background-color: #211A1E;
+	color: white;
+	font-family: sans-serif;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	border-radius: 18px;
+	/*border: 2px solid magenta;*/
+	background-color: black;
+	width: 90%;
+	max-width: 750px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em 0;
+	align-items: center;
+}
+
+.text-guide {
+	font-weight: bold;
+	margin-top: 16px;
+	text-align: center;
+}
+
+.play-buttons {
+	display: flex;
+	width: 80%;
+	height: 80%;
+	justify-content: space-around;
+	align-items: center;
+}
+.container {
+	border-radius: 8px;
+	padding: 24px;
+	padding-bottom: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container:hover {
+	background-color: #211A1E;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.container:active {
+	background-color: #2E252A;
+	transition: 0.2s;
+}
+
+.rock, .paper, .scissors {
+	height: 36px;
+	width: 36px;
+	border-radius: 18px;
+}
+
+.rock {
+	background-color: #5BC0EB;
+}
+
+.paper {
+	background-color: #FDE74C;
+}
+
+.scissors {
+	background-color: #C3423F;
+}
+
+.text {
+	position: absolute;
+	padding-top: 48px;
+}
+
+button {
+	border: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: #9BC53D;
+	padding: 10px 20px;
+	margin-bottom: 18px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #A0C74C;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+button:active {
+	background-color: #ABCF5F;
+	transition: 0.2s;
+}
+
+.score-board {
+	margin-top: 8px;
+	margin-bottom: 24px;
+	font-weight: bold;
+}
