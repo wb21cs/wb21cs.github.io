@@ -1,0 +1,195 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 12px 18px;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 13px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header p:hover {
+    text-decoration: underline;
+}
+
+.google-apps-icon {
+    width: 24px;
+    fill: #5f6368;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.google-apps-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.google-apps {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgb(72, 70, 88);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    bottom: -28px;
+    left: -50px;
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 400ms;
+}
+
+.google-apps:hover .tooltip {
+    opacity: 1;
+}
+
+header button {
+    background-color: rgb(26, 115, 232);
+    color: white;
+    font-family: Roboto, Helvetica, sans-serif;;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 25px;
+}
+
+header button:hover {
+    opacity: 0.91;
+    box-shadow: 0 0 2.5px rgba(26, 115, 232, 0.5);
+    cursor: pointer;
+}
+
+header button:active {
+    opacity: 0.65;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 275px;
+    margin-bottom: 32px;
+}
+
+.search-icon {
+    color: #aaa;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box svg {
+    position: absolute;
+    width: 20px;
+    fill: #9aa0a6;
+    left: 14px;
+    top: 13px;
+}
+
+main input {
+    width: 560px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 226, 226);
+    margin-bottom: 28px;
+    padding-left: 44px;
+    outline: none;
+}
+
+main input:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+main input:focus {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.main-buttons button {
+    background-color: rgb(248,249,250);
+    border: none;
+    border-radius: 4px;
+    padding: 9px 20px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.main-buttons button:hover {
+    box-shadow: 0 0 2px rgba(29, 29, 29, 0.45);
+}
+
+.main-language-switch {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+}
+
+.main-language-switch span {
+    color: rgb(0, 0, 122);
+    cursor: pointer;
+}
+
+.main-language-switch span:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+    background-color: rgb(240, 240, 240);
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.lower-footer > div > div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 34px;
+    border-bottom: 1px solid #d4d6da;
+}
+
+.lower-footer, .lower-footer-right, .lower-footer-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    margin: 0 20px;
+}

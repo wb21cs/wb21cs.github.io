@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(0,150,255);
+    background: linear-gradient(0deg, rgba(0,150,255,1) 0%, rgba(0,215,255,1) 35%, rgba(114,255,255,1) 100%); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 64px;
+}
+
+button {
+    background-color: #5800FF;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 16px;
+    cursor: pointer;
+    transition: opacity 0.005s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+.to-do-list-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    padding: 24px;
+    background-color: #faffff;
+    border-radius: 8px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.task-input-container {
+    flex: 1;
+    margin-right: 48px;
+}
+
+.task-input {
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;   
+}
+
+.mid-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.mid-section-tabs{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 64px;
+}
+
+.mid-section input {
+    display: none;
+}
+
+.mid-section label {
+    color: #0a001d;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 1px;
+    padding-bottom: 1px;
+}
+
+#All:checked + .all,
+#Pending:checked + .pending,
+#Completed:checked + .completed {
+    color: #5800FF;
+    border-bottom: solid 2px #5800ff;
+}
+
+.bottom-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.task-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 8px;
+    padding-left: 0;
+}
+
+.task-checkbox {
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    align-self: start;
+    /* width: 16px;
+    height: 16px; */
+}
+
+.task-value {
+    margin: 0;
+    line-height: 34px;
+    /* word-wrap: nowrap; */
+}
+
+.task-checkbox:checked {
+    accent-color: #5800FF;
+}
+
+.task-checkbox:checked + .task-value {
+    text-decoration: line-through;
+}

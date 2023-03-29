@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+body, button, input, select {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container {
+    position: relative;
+    top: -27px;
+}
+
+.background-container img {
+    width: 100%;
+}
+
+.background-container div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.home-header {
+    position: absolute;
+    top : 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 56px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.netflix-logo-container {
+    display: flex;
+    align-items: center;
+    width: 135px;
+}
+
+.netflix-logo-container img {
+    width: 100%;
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.right-section select {
+    background-color: transparent;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 2px;
+    font-size: 15px;
+    color: white;
+    padding: 8px 10px;
+    margin-right: 32px;
+}
+
+.right-section button {
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    padding: 7px 17px;
+    cursor: pointer;
+}
+
+.home-main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-bottom: 32px;
+}
+
+.home-main p {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+.first-paragraph {
+    max-width: 640px;
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.second-paragraph {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.third-paragraph {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.email-request {
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+
+.email-request input {
+    border-width: 1px;
+    border-radius: 3px 0px 0px 3px;
+    padding: 20px 8px;
+    flex: 1;
+}
+
+.email-request input::placeholder {
+    font-size: 16px;
+    color: rgb(97, 97, 97);
+}
+
+.email-request button {
+    background-color: #f40612;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 0px 2px 2px 0px;
+    padding: 16px 20px;
+}
