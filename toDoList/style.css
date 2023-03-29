@@ -141,11 +141,6 @@ button:active{
 
 .bottom-section {
     width: 100%;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    column-gap: 1em;*/
 }
 
 .task-container {
