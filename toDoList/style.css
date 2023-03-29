@@ -35,7 +35,8 @@ button:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 420px;
+    width: 90%;
+    max-width: 420px;
     padding: 24px;
     background-color: #faffff;
     border-radius: 8px;
