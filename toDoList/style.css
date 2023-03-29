@@ -10,10 +10,47 @@ body {
     align-items: center;
 }
 
+@media (max-width: 450px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 415px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 355px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 325px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+}
+
 button {
     background-color: #5800FF;
     color: white;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
     border-radius: .25rem;
     border: none;
     padding: .35em 1em;
@@ -55,12 +92,16 @@ button:active{
 }
 
 .task-input {
-    height: 1.75rem;
     border: solid .0625rem gray;
     border-radius: .25rem;
     width: 100%;
-    padding: 0 .75em;
+    font: .75rem;
+    padding: .35em .75em;
     outline: none;   
+}
+
+.task-input::placeholder {
+    font-size: 1rem;
 }
 
 .mid-section {
