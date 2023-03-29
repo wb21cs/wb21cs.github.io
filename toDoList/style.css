@@ -35,7 +35,7 @@ button:active{
     justify-content: center;
     align-items: center;
     width: 90%;
-    max-width: 420px;
+    max-width: 26.25rem;
     padding: 1.5em;
     background-color: #faffff;
     border-radius: .5rem;
@@ -68,14 +68,14 @@ button:active{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 
 .mid-section-tabs{
     display: flex;
     flex: 1;
     justify-content: space-between;
-    margin-right: 64px;
+    margin-right: 2em;
 }
 
 .mid-section input {
@@ -85,37 +85,41 @@ button:active{
 .mid-section label {
     color: #0a001d;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0 1px;
-    padding-bottom: 1px;
+    padding: 0 .0625em;
+    padding-bottom: .0625em;
 }
 
 #All:checked + .all,
 #Pending:checked + .pending,
 #Completed:checked + .completed {
     color: #5800FF;
-    border-bottom: solid 2px #5800ff;
+    border-bottom: solid .125rem #5800ff;
 }
 
 .bottom-section {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: 1em;*/
 }
 
 .task-container {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 8px;
+    padding: .5em;
     padding-left: 0;
+
 }
 
 .task-checkbox {
     margin: 0;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: .625em;
+    margin-top: .625em;
     align-self: start;
     /* width: 16px;
     height: 16px; */
@@ -123,7 +127,7 @@ button:active{
 
 .task-value {
     margin: 0;
-    line-height: 34px;
+    line-height: 2rem;
     /* word-wrap: nowrap; */
 }
 
