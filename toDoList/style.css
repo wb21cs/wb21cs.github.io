@@ -168,7 +168,7 @@ button:active{
 }
 
 .task-checkbox:checked {
-    accent-color: #5800FF;
+    accent-color: #5801FF;
 }
 
 .task-checkbox:checked + .task-value {
