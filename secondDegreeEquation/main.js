@@ -10,11 +10,11 @@ document.getElementById("solution").onclick = function() {
     if (a==0) {
         text.textContent = "the number A value cannot be null, try again"
     } else if (delta > 0) {
-        x1 = (b+Math.sqrt(delta))/(2*a)
-        x2 = (b-Math.sqrt(delta))/(2*a)
+        x1 = (-b+Math.sqrt(delta))/(2*a)
+        x2 = (-b-Math.sqrt(delta))/(2*a)
         text.textContent = "this equation has two real solutions which are : x1 = " + x1 + " and x2 = " + x2
     } else if (delta == 0) {
-        x = b/(2*a)
+        x = -b/(2*a)
         text.textContent = "this equation has one only real solution which is : x = " + x
     } else if (delta < 0) {
         text.textContent = "this equation has no real solutions"
