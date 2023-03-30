@@ -37,7 +37,7 @@
             name="midSectionTabs"
             checked="checked"
           />
-          <label for="All" class="all" onclick="checkCategory('All')"
+          <label for="All" class="all" onclick="updateDisplay(0)"
             >All</label
           >
           <input
@@ -50,7 +50,7 @@
           <label
             for="Pending"
             class="pending"
-            onclick="checkCategory('Pending')"
+            onclick="updateDisplay(1)"
             >Pending</label
           >
           <input
@@ -63,7 +63,7 @@
           <label
             for="Completed"
             class="completed"
-            onclick="checkCategory('Completed')"
+            onclick="updateDisplay(2)"
             >Completed</label
           >
         </form>
@@ -84,6 +84,6 @@
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
