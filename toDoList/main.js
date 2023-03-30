@@ -78,12 +78,10 @@ function updateDisplay(category) {
             newTaskLabel.innerText = taskListObj[i].textValue
             newTask.appendChild(newTaskInput)
             newTask.appendChild(newTaskLabel)
-            taskList.push(newTask)
+            taskListDOM.appendChild(newTask)
         }
-    }
-    for (let i = 0; i < taskList.length; i++) {
-        taskListDOM.appendChild(taskList[i])    
-    }
+    }
+            
 }
 
 function switchCategory() {
