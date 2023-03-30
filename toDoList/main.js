@@ -58,8 +58,7 @@ function clearTasks() {
 function updateDisplay(category) {
     currentCategory = category
     switchCategory()
-    taskListDOM.innerText = ""
-    taskList = []
+    taskListDOM.innerText = ""
     for (let i = 0; i < taskListObj.length; i++) {
         if (((category == 1) && (!taskListObj[i].isChecked)) ||
             ((category == 2) && (taskListObj[i].isChecked)) ||
