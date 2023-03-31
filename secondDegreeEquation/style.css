@@ -1,5 +1,21 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
 body {
     margin: 0;
+    padding: 1em;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,40 +26,47 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 3.2rem;
+    margin: 1em 0;
+    text-align: center;
 }
 
 .formula {
-    font-size: 18px;
     display: flex;
     align-items: center;
 }
 
 input {
-    height: 20px;
-    width: 50px;
-    margin: 0 6px;
-    box-shadow: 0 1px 5px #000;
-    font-family: Roboto Mono, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    height: 1.6rem;
+    aspect-ratio: 3 / 1;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 .5em;
+    box-shadow: 0 .1rem .5rem #000;
     background-color: #a5c9ca;
     color: #2c3333;
     border: none;
-    padding: 4px 6px;
-    border-radius: 3px;
+    padding: .3em .5em;
+    border-radius: .3rem;
     outline: none;
 }
 
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3.2em;
+}
+
 .submit {
-    padding: 4px 16px;
-    margin-top: 32px;
+    padding: .1875em 1em;
     cursor: pointer;
     background-color: #395b64;
     border: none;
     color: white;
-    font-family: Roboto Mono, Arial, Helvetica, sans-serif;
-    border-radius: 3px;
-    box-shadow: 0 1px 5px #000;
+    border-radius: .3rem;
+    box-shadow: 0 .1rem .5rem #000;
     transition: opacity 0.05s;
 }
 
@@ -56,5 +79,6 @@ input {
 }
 
 #returnedSolution {
-    margin-top: 32px;
+    margin-top: 2em;
+    text-align: center;
 }
