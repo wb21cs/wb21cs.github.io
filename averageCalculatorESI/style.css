@@ -97,7 +97,7 @@ h1 {
 	display: grid;
   grid-template-columns: 25% 1fr 1fr 1fr 1fr;
   gap: 1em;
-  margin-bottom: 2em;
+  margin-block: 2em;
 }
 
 .grid-element {
@@ -150,4 +150,19 @@ input {
   background-color: transparent;
   box-shadow: none;
   font-size: clamp(0.7rem, 0.613rem + 0.4928vw, 1.1rem);
+}
+
+input[type=number] {
+
+  -moz-appearance: textfield;
+}        
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+
+p {
+  text-align: center;
+  color: var(--clr-main);
 }
