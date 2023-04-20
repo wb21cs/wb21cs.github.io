@@ -1,6 +1,7 @@
+let semesterSelectors = document.querySelector('#semester')
 let inputFields = document.querySelectorAll('input')
 let inputArea = document.querySelectorAll('.input-area')
-let semesterSelectors = document.querySelectorAll('.semester-selector')
+// let semesterSelectors = document.querySelectorAll('.semester-selector')
 let subjectAverageList = [] /*this array stores the average value of each subject*/
 let rowLength = 4
 let chosenSemester = 0	/*it's self-descriptive, i declared it to
@@ -104,21 +105,15 @@ let semesters = [	/* this is an array containing
 
 
 
-updateDisplay(chosenSemester)	/*this initiates the display*/
+updateDisplay(chosenSemester) /*this initiates the display*/
 updateAverage(chosenSemester) /* this updates the average once in case if the grid is already filled automatically*/
 
-semesterSelectors.forEach((item) => {
-	item.addEventListener("click", () => {
-		chosenSemester = item.value
+semesterSelectors.addEventListener('change', () => {
+		chosenSemester = semesterSelectors.value
+		console.log(chosenSemester)
 		updateDisplay(chosenSemester)
 		console.log(inputFields)
-	})
-})	/*this updates the display based on the semester selection of the user*/
-
-
- 
-
-
+	})/*this updates the display based on the semester selection of the user*/
 
 function updateAverage(chosenSemester) {
 
