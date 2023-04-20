@@ -153,7 +153,6 @@ input {
 }
 
 input[type=number] {
-
   -moz-appearance: textfield;
 }        
 
@@ -165,4 +164,20 @@ input::-webkit-outer-spin-button,
 p {
   text-align: center;
   color: var(--clr-main);
+}
+
+.semester-container {
+  margin-block: 3em;
+  text-align: center;
+}
+
+select {
+  background-color: var(--clr-main);
+  color: var(--clr-accent-2);
+  border: none;
+  height: 2rem;
+  margin-left: .5em;
+  padding-inline: 1em;
+  border-radius: .3em;
+  font-weight: bold;
 }
