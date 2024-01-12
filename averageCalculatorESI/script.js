@@ -85,7 +85,7 @@ let semesters = [	/* this is an array containing
 			subjectComponents : [1/3, 0, 1/3, 1/3]
 		},
 		{
-			subjectAbr : 'ELECTRO',
+			subjectAbr : 'ELN1',
 			subjectFactor : 4,
 			subjectComponents : [1/3, 0, 1/3, 1/3]
 		},
@@ -98,6 +98,48 @@ let semesters = [	/* this is an array containing
 			subjectAbr : 'ANG1',
 			subjectFactor : 2,
 			subjectComponents : [0, 1/3, 1/3, 1/3]
+		}
+	],
+	[	// 'index = 2' semeseter = S1 2CP
+		{
+			subjectAbr : 'ANA3',
+			subjectFactor : 5,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'ALG3',
+			subjectFactor : 3,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'PROBA1',
+			subjectFactor : 4,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'SFSD',
+			subjectFactor : 4,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'ARCHI2',
+			subjectFactor : 4,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'ELN2',
+			subjectFactor : 4,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'ECO',
+			subjectFactor : 2,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
+		},
+		{
+			subjectAbr : 'ANG2',
+			subjectFactor : 2,
+			subjectComponents : [1/3, 0, 1/3, 1/3]
 		}
 	]
 ]
