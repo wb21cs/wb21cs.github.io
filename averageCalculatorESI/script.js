@@ -124,7 +124,7 @@ let semesters = [	/* this is an array containing
 		{
 			subjectAbr : 'ARCHI2',
 			subjectFactor : 4,
-			subjectComponents : [1/3, 0, 1/3, 1/3]
+			subjectComponents : [1/5, 0, 2/5, 2/5]
 		},
 		{
 			subjectAbr : 'ELN2',
@@ -134,7 +134,7 @@ let semesters = [	/* this is an array containing
 		{
 			subjectAbr : 'ECO',
 			subjectFactor : 2,
-			subjectComponents : [1/3, 0, 1/3, 1/3]
+			subjectComponents : [1/2, 0, 0, 1/2]
 		},
 		{
 			subjectAbr : 'ANG2',
